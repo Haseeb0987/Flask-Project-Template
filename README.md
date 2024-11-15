@@ -1,10 +1,33 @@
-## Python Environment
+# Python Environment Setup
 
-Run commands on CMD
---> py -m venv environmentname -- (Sample: py -m venv .env)
---> .env\Scripts\activate -- To activate the environment
-(.env) F:\YourProjectDircectory> | <-- (.env) This should appear before your Directory
+## Step 1: Create a Virtual Environment
+Run the following command in your terminal to create a virtual environment:
 
-Now install all required libraries 
-If requirement.txt is present, run the command
- --> pip install -r requirement.txt
+```bash
+py -m venv environmentname
+```
+
+For example:
+```bash
+py -m venv .env
+```
+
+## Step 2: Activate the Virtual Environment
+To activate the virtual environment, use the command:
+
+```bash
+.env\Scripts\activate
+```
+
+Once activated, your terminal should display the environment name in parentheses before the directory path, like this:
+
+```bash
+(.env) F:\YourProjectDirectory>
+```
+
+## Step 3: Install Required Libraries
+If a `requirements.txt` file exists in your project, install all the required libraries by running:
+
+```bash
+pip install -r requirements.txt
+```
